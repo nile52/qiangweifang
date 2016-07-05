@@ -19,12 +19,10 @@ body{width:100%;font-size:1rem;font-family:"Lantinghei SC", "Open Sans", Arial, 
 a:active{text-decoration:none}
 a:hover{text-decoration:none}
 /* 清浮动 */
-/* .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%} */
-
-.clearfix:before,.clearfix:after {content: " "; display: table;}
-.clearfix:after {clear: both;}
-.clearfix {*zoom: 1;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%}
+/* 清浮动 */
+.fixed_btn_adjust{height:50px;width:100%}
 /* public */
 
 
@@ -59,6 +57,13 @@ a:hover{text-decoration:none}
 .modal .modal-footer button{border:0;color:#e66140;font-size:16px}
 .modal-dialog {margin: 40% 10px;}
 /* fixed_btm_btn */
+
+.dianjiqiangpai{position:fixed;bottom:0;width:100%;}
+.dianjiqiangpai .qiangbai_price{width:30%;background:#fff;color:#e66140;float:left;line-height:50px;text-align:center}
+.dianjiqiangpai .qiangbai_btn{width:70%;background:#e66140;color:#fff;float:left;line-height:50px;text-align:center}
+.dianjiqiangpai .qiangbai_btn a{color:#fff}
+
+
 
 
 /* index */
@@ -158,6 +163,18 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con p.refund_reason_list:first-child{border-bottom:0px solid #eee;}
 .card p .refund_name{font-weight:bold;float:left}
 .card p .refund_price{font-weight:bold;float:right;color:#e66140}
+.card .card_title p .building_name{font-weight:bold;}
+.card .card_title p .coupons_price{float:right;color:#e66140;font-size:1.2rem}
+.card .card_title p .coupons_name{font-weight:bold;}
+.card .sec p{line-height:25px}
+.card .sec{padding:15px}
+.card .card_con .order_btn2{width:50%;float:left;text-align:center;line-height:44px}
+.card .card_con .order_btn{text-align:center;line-height:44px}
+
+
+
+
+
 .card .refund_tips{font-size:0.8rem;color:#999}
 /* radio */
 .pay_list_c1{width:24px;height:18px;float:right;padding-top:3px;cursor:pointer;text-align:center;margin:10px;background-image:url(../images/inputradio.gif);background-repeat:no-repeat;background-position:-24px 0;}
@@ -232,8 +249,16 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
     border-bottom: 2px solid #e66140;
     background: #fff;
 }
-
-
+#peitao .card{padding:15px;}
+#peitao .card p{font-size:0.9rem}
+#xuzhi .xuzhi_con{padding:15px;}
+#xuzhi .xuzhi_con .xuzhi_title{text-align:center;}
+#xuzhi .xuzhi_con .xuzhi_title p{    background: #fff;
+    /* margin-top: -15px; */
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -32px;}
+#xuzhi .xuzhi_con .xuzhi_details p{ font-size:0.9rem}
 /* item */
 
 
@@ -245,6 +270,33 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 
 
 
+
+/* item_details */
+.item_details_countdown{padding:15px;text-align:center}
+#fnTimeCountDown{font-size:.8em;line-height:2em;}
+#fnTimeCountDown span.num{padding:5px 2px;background:#000;color:#fff;margin:1px;border-radius:2px}
+#fnTimeCountDown span.hm{padding:5px 2px;background:red;color:#fff;margin:1px;border-radius:2px}
+.card .houseype_img img{width:100%}
+.card .houseype_text{padding:15px}
+.card .houseype_text p{font-size:0.9rem;color:#ccc;}
+.card .houseype_text p .houseype_details{float:right}
+.houseype_img .modal-dialog {margin: 40% 0;}
+.card .houseype_img {position: relative;display: block;margin-bottom: 5px;}
+.card .houseype_img .btn{position: absolute;top: 10px;right: 10px;z-index: 200;
+height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color: #fff;font-size: 12px;text-align: center;border-radius: 3px;}
+/* item_details */
+
+
+
+
+
+
+
+
+
+/* 订单缺省 */
+.quesheng{margin:50px;text-align:center;color:#ccc;}
+/* 订单缺省 */
 
 
 

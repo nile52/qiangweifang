@@ -1,1 +1,187 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>提交订单</title>
+	<meta charset="utf-8">	
+	<!-- 手机头 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache" />
+	<!-- 手机头 -->   
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="css/1.css" rel="stylesheet">
+</head>
+
+
+
+<body style="background:#f5f5f5;height:100%">
+
+
+	<div class="easy_header" style="background:#fff;">
+		<a href="" class="left" style="left:0"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(0, 0, 0);"></span></a>
+		<p>我的订单</p>
+	</div>
+
+	<!-- 订单缺省 -->
+	<div class="quesheng" style="display:none">
+		<img src="images/success.png">
+		<p>您还没有订单</p>
+	</div>	
+	
+	<!-- 待支付 -->
+	<div class="card unpay">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p>
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">待支付</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_con">
+			<div class="order_btn2 c_999"><a href="">取消订单</a></div>
+			<div class="order_btn2 c_red"><a href="">支付</a></div>
+			<div class="clearfix"></div>
+		</div>		
+	</div>
+	<!-- 已取消 -->
+	<div class="card cancelled">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p class="">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">已取消</span>
+			</p><div class="clearfix"></div>
+		</div>	
+	</div>
+	<!-- 已支付 -->
+	<div class="card paied">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p class="">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">已支付</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_con">
+			<div class="order_btn2"><a href="" class="c_999">退款</a></div>
+			<div class="order_btn2 c_red"><a href="">去兑换</a></div>
+			<div class="clearfix"></div>
+		</div>		
+	</div>
+	<!-- 已兑换 -->
+	<div class="card exchanged">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p class="">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">已兑换</span>
+			</p><div class="clearfix"></div>
+		</div>	
+	</div>
+	<!-- 退款中 -->
+	<div class="card refunding">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p class="">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">退款中</span>
+			</p><div class="clearfix"></div>
+		</div>	
+	</div>
+	<!-- 已退款 -->
+	<div class="card refunded">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title sec">
+			<p class="">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">已退款</span>
+			</p><div class="clearfix"></div>
+		</div>	
+	</div>
+	<!-- 券失效 -->
+	<div class="card failure">
+		<div class="card_title">
+			<p>
+				<span class="building_name">湖光山色</span>
+				<span class="developer_name right">XXXX开发商</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title">
+			<p class="padding0">
+				<span class="coupons_name">8000抵扣券</span>
+				<span class="coupons_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+			<p class="fs08 c_ccc">
+				<span class="coupons_time">截止日期：2016.06.06</span>
+				<span class="coupons_status right">券失效</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_con">
+			<div class="order_btn"><a href="" class="c_999">去退款</a></div>
+			<div class="clearfix"></div>
+		</div>		
+	</div>
+
+
+
+	
+</body>
+</html>
