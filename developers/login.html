@@ -53,10 +53,8 @@
 			</p><div style="clear:both"></div>
 			<p class="order_details_item_list" style="border:0">
 				<span class="order_details_item">√‹¬Î</span>
-				<input class="txt-input txt-password" type="password" autocomplete="off" placeholder="«Î ‰»Î√‹¬Î" required id="input2" />
+				<input class="txt-input txt-password" type="password" autocomplete="off" placeholder="«Î ‰»Î√‹¬Î" required id="input2" /><b class="tp-btn btn-off"></b>
 				<span class="clear-box" onclick="clearKeyword2();"></span>
-				<b class="tp-btn btn-off"></b>
-				
 			</p><div style="clear:both"></div>
 		</div>	
 	</div>
@@ -87,7 +85,8 @@ $('.btn-off').on('click',function() {
         $(this).prev().attr('type', 'text');
     }
 });
-
+</script>
+<script>
 function clearKeyword1(){
     document.getElementById('input1').value = '';
 }

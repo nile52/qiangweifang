@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>在线尝试 Bootstrap 实例</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache" />
+   
+   <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <link href="../css/1.css" rel="stylesheet">
+</head>
+
+
+
+<body style="background:#f5f5f5;height:100%">
+
+
+	<div class="easy_header" style="background:#fff;">
+		<a href="" class="left" style="left:0"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(0, 0, 0);"></span></a>
+		<p>兑换礼物</p>
+	</div>
+	
+	
+	<!-- 折扣类 --><!-- 暂时都显示 -->
+	<div class="card exchange_confirm " id="zhekou" style="display:">
+		<div class="card_title">
+			<p class="fs12" style="line-height:1.5rem;padding:15px 0 0 0;text-align:center"><span class="c_red">9折抵扣券</span></p>	
+			<p class="fs09" style="line-height:1.5rem;padding:10px 0;">该优惠券可在案场公示价格基础上对指定房源房款总价打<span class="c_red"> 9 </span>折优惠</p>	
+		</div>
+	</div>
+	<!-- 抵扣类 --><!-- 暂时都显示 -->
+	<div class="card exchange_confirm" id="dikou" style="display:">
+		<div class="card_title">
+			<p class="fs12" style="line-height:1.5rem;padding:15px 0 0 0;text-align:center"><span class="c_red">10000.00元抵扣券</span></p>	
+			<p class="fs09" style="line-height:1.5rem;padding:10px 0;">该抵扣券可针对指定房源使用，在案场优惠后的总房款基础上额外再优惠<span class="c_red"> 10000.00 </span>元。</p>	
+		</div>
+	</div>
+
+
+	
+	
+	<div class="card">
+		<div class="card_title">
+			<p class="fs095">资料填写<span class="refund_tips">（正确填写信息，才能收到大礼哦~）</span></p>		
+		</div>
+		<div class="card_con">
+			<p class="order_details_item_list">
+				<span class="order_details_item">下单时间</span>
+				<input type="text" placeholder="请输入房间号">
+			</p><div style="clear:both"></div>
+			<p class="order_details_item_list">
+				<span class="order_details_item">有效期至</span>
+				<input type="text" placeholder="请输入成交价">
+			</p><div style="clear:both"></div>
+			<p class="order_details_item_list">
+				<span class="order_details_item">订单号</span>
+				<input type="text" placeholder="请输入您的真实姓名">
+			</p><div style="clear:both"></div>
+			<p class="order_details_item_list" style="border:0">
+				<span class="order_details_item">付款时间</span>
+				<input type="text" placeholder="请正确填写地址">
+			</p><div style="clear:both"></div>
+		</div>	
+	</div>
+	
+	<p class="c_red" style="padding:15px">注意哦，若选择“取消”就无法获得大礼啦！！</p>
+
+
+	
+	<div class="btm_btn">
+		<button class="c_fff">取消</button> <button class="c_red" data-toggle="modal" data-target="#myModal">兑换</button>	
+	</div>
+	
+
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+	   aria-labelledby="myModalLabel" aria-hidden="true">
+	   <div class="modal-dialog">
+		  <div class="modal-content">
+
+			 <div class="modal-body">
+			   <h4>提交完成</h4>
+				<p>兑换成功！兑换成功兑换成功兑换成功兑换成功兑换成功！</p>
+			 </div>
+			 <div class="modal-footer">
+				<button type="button" class="btn btn-default" 
+				   data-dismiss="modal">确认
+				</button>
+			 </div>
+		  </div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+
+	
+	
+</body>
+</html>
