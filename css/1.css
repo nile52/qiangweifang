@@ -8,6 +8,7 @@ body{width:100%;font-size:16px;font-family:"黑体","Lantinghei SC", "Open Sans"
 
 
 
+.fs70{font-size:70px}
 .fs22{font-size:22px}
 .fs20{font-size:20px}
 .fs18{font-size:18px}
@@ -58,6 +59,7 @@ a:hover{text-decoration:none}
 /* developer_header */
 .developer_header{position:relative;z-index:8888;color: #666;text-align: center;}
 .developer_header p{height:44px;line-height:44px;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.developer_header p.fs70{height:80px;line-height:80px;text-align: center;margin-bottom:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .developer_header a{position: absolute;width: 40px;height: 44px;line-height:44px;padding:0 5px;}
 /* developer_header */
 
@@ -144,6 +146,11 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card{box-shadow: 0px 1px 1px #eee;margin-top:5px;background:#fff}
 .item_card{box-shadow: 0px 1px 1px #eee;margin-top:10px;background:#fff}
 .card .card_title{border-bottom:1px solid #eee;line-height:49px;padding:0 15px;}
+.item_card .card .card_title{border-bottom:1px solid #eee;padding:15px;line-height:25px}
+
+
+
+
 .refund .card_title{height:36px;line-height:36px}
 .card .card_title p{margin:0}
 .card .card_title a{color:#333}
@@ -303,7 +310,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 #fnTimeCountDown span.hm{padding:5px 2px;background:red;color:#fff;margin:1px;border-radius:2px}
 .card .houseype_img img{width:100%}
 .card .houseype_text{padding:15px}
-.card .houseype_text p{font-size:0.9rem;color:#ccc;}
+.card .houseype_text p{font-size:14px;color:#666;}
 .card .houseype_text p .houseype_details{float:right}
 .houseype_img .modal-dialog {margin: 40% 0;}
 .card .houseype_img {position: relative;display: block;margin-bottom: 5px;}
