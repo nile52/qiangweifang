@@ -1,35 +1,57 @@
-/* public */
+﻿/* public */
 html{font-size:100%;}
-body{width:100%;font-size:1rem;font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;}
+body{width:100%;font-size:16px;font-family:"黑体","Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;}
 .left{float:left}
 .right{float:right}
-.c_000{color:#000}
-.c_ccc{color:#ccc}
-.c_yellow{color:#ffec00}
 
-.c_fff{color:#fff}
-.c_6a{color:#6a6a6a}
+
+
+
+
+.fs22{font-size:22px}
+.fs20{font-size:20px}
+.fs18{font-size:18px}
+.fs17{font-size:17px}
+.fs16{font-size:16px}
+.fs15{font-size:15px}
+.fs14{font-size:14px}
+.fs13{font-size:13px}
+.fs12{font-size:12px}
+
+.c_69{color:#696969}
+.c_666{color:#666}
 .c_red{color:#e66140}
-.fs095{font-size:0.95rem}
-.fs30{font-size:3rem}
-.fs12{font-size:1.2rem}
-.fs09{font-size:0.9rem}
-.fs08{font-size:0.8rem}
-.fs15{font-size:1.5rem}
+.c_333{color:#333}
+.c_999{color:#999}
+.c_fff{color:#fff}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 a:active{text-decoration:none}
 a:hover{text-decoration:none}
 /* 清浮动 */
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*+height:1%}
 /* 清浮动 */
-.fixed_btn_adjust{height:50px;width:100%}
+.fixed_btn_adjust{height:80px;width:100%}
 /* public */
 
 
 /* easy_header */
-.easy_header{position:relative;z-index:8888;height:44px;border-bottom: 1px solid #ccc;color: #666;text-align: center;}
-.easy_header p{height:44px;line-height:44px;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.easy_header a{position: absolute;width: 40px;height: 44px;line-height:44px;padding:0 5px;}
+.easy_header{position:relative;z-index:8888;border-bottom: 1px solid #ccc;color: #666;text-align: center;}
+.easy_header p{padding:15px 0;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:17px;color:e66140}
+.easy_header a{position: absolute;line-height:55px;padding:0 10px;}
 /* easy_header */
 
 
@@ -44,18 +66,23 @@ a:hover{text-decoration:none}
 
 
 /* fixed_btm_btn */
-.btm_btn{margin:5%;width:90%;}
-.fixed_btm_btn{position:fixed;bottom:0;margin:5%;width:90%;}
-.btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;padding:10px;border-radius: 5px;}
-.btm_btn .c_fff{background: #fff;color: #e66140;outline: none;width:48%;border: none;padding:10px;border-radius:5px;margin:0 1%;float:left}
-.btm_btn .c_red{background: #e66140;color: #fff;outline: none;width:48%;border: none;padding:10px;border-radius:5px;margin:0 1%}
-.fixed_btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;padding:10px;border-radius: 5px;}
+.fixed_btm_btn{position:fixed;bottom:0;width: 100%;}
+.fixed_btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;font-size:15px;height:44px}
+.fixed_btm_btn .c_fff{background: #fff;color: #e66140;width:50%;float:left;}
+.fixed_btm_btn .c_red{background: #e66140;color: #fff;width:50%;}
+
+
+.btm_btn{padding:30px 15px 10px 15px}
+.btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;font-size:15px;height:44px;border-radius:3px}
+
+
+
 /* 模态框（Modal） */
 .modal .modal-body h4{font-weight:bold;text-align:center}
 .modal .modal-body p{font-size:14px}
 .modal .modal-footer{text-align:center;}
 .modal .modal-footer button{border:0;color:#e66140;font-size:16px}
-.modal-dialog {margin: 40% 10px;}
+.modal-dialog {margin: 50% 10px;}
 /* fixed_btm_btn */
 
 .dianjiqiangpai{position:fixed;bottom:0;width:100%;}
@@ -67,37 +94,33 @@ a:hover{text-decoration:none}
 
 
 /* index */
-.index_header{text-align:center;height:44px;border-bottom:1px solid #000;line-height:30px;padding:5px}
+.index_header{text-align:center;height:44px;border-bottom:1px solid #ccc;line-height:30px;padding:5px}
 .index_header>a{margin:0 5px}
-.index_header ul{width:158px;margin:0 auto;border:1px solid #e66140;border-radius:4px;padding:0;line-height:30px; }
+.index_header ul{width:178px;margin:0 auto;border:1px solid #e66140;border-radius:4px;padding:0;line-height:30px; }
 .index_header ul li{line-height:30px;margin:0 }
 .index_header ul.nav>li>a {
     position: relative;
     display: block;color:#e66140;
-    padding:5px 10px;border:0 ;border-radius:4px;margin:0 ;
+    padding:3px 10px;border:0 ;border-radius:4px;margin:0 ;
 }
 .index_header ul.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color:#fff;
     border:0;background:#e66140;
     border-bottom-color: transparent;
 }
-
 .toolbar{text-align:center;height:45px;line-height:45px;}
 .toolbar .p25{width:33.3%;float:left;}
-.toolbar .p25 .btn {background: #fff;outline:none;padding:0;}
+.toolbar .p25 .btn {background: #fff;outline:none;padding:0;font-size:15px;    color: #666;}
 .toolbar .p25 .btn:active {box-shadow:none;}
 .dropdown-menu {min-width: 0;}	
-.index_container .item {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;margin-bottom:10px;box-shadow:0px 1px 1px #eee;		}
+.index_container .item {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;margin-bottom:5px;box-shadow:0px 1px 1px #eee;		}
 .index_container .item img{width:100%;}
-.index_container .item .tips {position: absolute;bottom: 0px;z-index: 200;height:24px;line-height:24px;padding: 0 7px;background: #fff;color: #000;font-size:14px;text-align: center;width:100%;}
+.index_container .item .tips {position: absolute;top:5px;z-index: 200;line-height:24px;padding: 0 7px;background:rgba(0,0,0,0.5);color:#e66140;font-size:12px;text-align: center;padding:0px 5px;right:5px;border-radius:2px}
+.index_container .item .countdown {position: absolute;bottom: 0px;z-index: 200;height:28px;line-height:24px;padding: 0 7px;background:rgba(0,0,0,0.5);color:#fff;font-size:14px;text-align: center;width:100%;padding:2px}
 .index_container .item .info_ads {position: absolute;background: rgba(0,0,0,0.3);top: 0;right: 0;z-index: 100;width:100%;height: 100%;text-align: center;vertical-align:middle}
-.index_container .item .info_ads p{color:#fff;margin-top:15%;}
-.index_container .item .info_ads p .small{font-size:1rem;}
-.index_container .item .info_ads p .big{font-size:2rem;}
-.index_container .item .countdown{background:#fff;}
-
-
-
+.index_container .item .info_ads p{color:#fff;margin-top:10%;}
+.index_container .item .info_ads p .small{font-size:16px;line-height:40px}
+.index_container .item .info_ads p .big{font-size:25px;}
 /* index */
 
 
@@ -106,12 +129,12 @@ a:hover{text-decoration:none}
 .search .back{width:10%;margin:8px 0;}
 .search .search_warp{width:90%;}
 .search_warp form.back{border-radius: 18px;background: #eee;}
-.search_warp form>.left{background: #eee;border:1px solid #ddd;border-radius: 20px;width: 84%;padding: 0 10px;}
-.search_warp .search_icon {width: 20px;margin-top:5px;}
+.search_warp form>.left{background: #eee;border:1px solid #ddd;border-radius: 20px;width: 84%;padding: 0 10px;margin:2px 0;}
+.search_warp .search_icon {width: 20px;}
 .search_warp .search_icon img{width: 20px;}
 .search_warp .search_box{padding:0 5px;}
-.search_warp .search_box input {height: 30px;border: none;font-size: 14px;background:#eee;outline:none;min-width:160px}
-input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#e66140;line-height:30px;font-size:15px;outline:none;}
+.search_warp .search_box input {height:28px;border: none;font-size: 14px;background:#eee;outline:none;min-width:160px}
+input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#e66140;line-height:30px;font-size:13px;outline:none;}
 /* search */
 
 
@@ -120,77 +143,80 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 /* card */
 .card{box-shadow: 0px 1px 1px #eee;margin-top:5px;background:#fff}
 .item_card{box-shadow: 0px 1px 1px #eee;margin-top:10px;background:#fff}
-.card .card_title{border-bottom:1px solid #eee;line-height:40px;padding:0 15px;}
+.card .card_title{border-bottom:1px solid #eee;line-height:49px;padding:0 15px;}
+.refund .card_title{height:36px;line-height:36px}
 .card .card_title p{margin:0}
 .card .card_title a{color:#333}
 .card .card_title .order_details{padding:10px 0;display:box;display:-webkit-box; display:-moz-box;}
 .card .card_title .order_details .order_details_img{margin-right:10px;}
 .card .card_title .order_details{line-height:1.2rem;}
 .card .card_title .order_details .order_details_con{background:url(../images/into.png) right no-repeat;width:100%;padding-right:20px;     box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
-.card .card_title .order_details .order_details_con .order_details_text_title{margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow: ellipsis}
+.card .card_title .order_details .order_details_con .order_details_text_title{margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
 .card .card_title .order_details .order_details_con .order_details_text_title .area{margin-left:20px}
 .card .card_title .order_details .order_details_img img{width:100px;height:100px}
 .card .card_con{border-bottom:1px solid #eee;padding:0 15px;}
 .card .card_state{padding:0 15px;}
-.card .card_state p{font-size:1rem;line-height:50px;margin:0}
-.card .card_con p{font-size:1rem;color:#666;line-height:50px;margin:0}
+.card .card_state p{line-height:48px;margin:0;color:#e66140;font-size:17px}
+.card .card_con p{font-size:15px;color:#666;/* padding:14px 0; */margin:0;line-height:44px}
 .card .card_con p.refund_reason_list{border-bottom:1px solid #eee;}
+.card .card_con p.refund_reason_list .refund_reason{color:#333}
 .card .card_con p.order_details_item_list{border-bottom:1px solid #eee;}
-
-
+#clearbox1 {display:none}
+#clearbox2 {display:none}
 .card .card_con p.order_details_item_list .clear-box {
     width: 40px;
-    background-image: url('../images/clear.png');
+    background-image: url('../images/ic_up_x@2x.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20px;    display: block;
+    background-size: 20px;
     position: absolute;
     right: 50px;
-    margin-top: -40px;
+    margin-top: -30px;
     width: 51px;
     height: 35px;
 }
 .card .card_con p.order_details_item_list span{display:box;display:-webkit-box; display:-moz-box;}
-.card .card_con p.order_details_item_list input{border:none;line-height:30px;padding:10px 0;outline:none}
-.card .card_con p.order_details_item_list input::-webkit-input-placeholder {font-size:0.9rem}
-.card .card_con p.order_details_item_list .order_details_item{float:left;width:80px}
+.card .card_con p.order_details_item_list input{border:none;outline:none}
+.card .card_con p.order_details_item_list input::-webkit-input-placeholder {font-size:13px}
+.card .card_con p.order_details_item_list .order_details_item{float:left;width:80px;color:#999}
+.card .card_con p.order_details_item_list .order_details_item.c_333{color:#333}
+.card .card_con p.order_details_item_list .order_details_item.c_red{color:#e66140}
 .card .card_con table{position: relative;top: -40px;}
-.card .card_con table td{width:33%;padding:10px 0;text-align:center}
+.card .card_con table td,.card .card_con table tr{font-size:13px;}
+.card .card_con table td{padding:10px 0;text-align:center}
 .card .card_con table tr{padding:10px 0;border-bottom:1px solid #eee}
 .card .card_con p.order_details_item_list .order_details_itemcom{color:#000;}
 .card .card_con p.content{text-align:center}
-.card .card_con p.content a{color:#999;}
+.card .card_con p.content a{color:#e66140;font-size:16px}
 .card .card_con p.refund_reason_list:first-child{border-bottom:0px solid #eee;}
-.card p .refund_name{font-weight:bold;float:left}
-.card p .refund_price{font-weight:bold;float:right;color:#e66140}
-.card .card_title p .building_name{font-weight:bold;}
-.card .card_title p .coupons_price{float:right;color:#e66140;font-size:1.2rem}
-.card .card_title p .coupons_name{font-weight:bold;}
+.refund .card_con p.refund_reason_list:first-child{border-bottom:1px solid #eee;}
+.refund .card_con p.refund_reason_list{border-bottom:1px solid #eee;height:44px;margin:0}
+.refund .card_con p.refund_reason_list:last-child{border-bottom:0px solid #eee;}
+.card p .refund_name{float:left;font-size:15px;color:#333;}
+.card p .refund_price{float:right;color:#e66140;font-size:20px}
+.card .card_title p .building_name{font-size:16px;color:#333}
+.card .card_title p .coupons_time,.card .card_title p .coupons_status{font-size:13px;color:#999}
+.card .card_title p .coupons_price{float:right;color:#e66140;font-size:20px}
+.card .card_title p .coupons_name{font-weight:bold;font-size:15px}
 .card .sec p{line-height:25px}
 .card .sec{padding:15px}
 .card .card_con .order_btn2{width:50%;float:left;text-align:center;line-height:44px}
 .card .card_con .order_btn{text-align:center;line-height:44px}
-
-
-
-
-
 .card .refund_tips{font-size:0.8rem;color:#999}
 /* radio */
-.pay_list_c1{width:24px;height:18px;float:right;padding-top:3px;cursor:pointer;text-align:center;margin:10px;background-image:url(../images/inputradio.gif);background-repeat:no-repeat;background-position:-24px 0;}
+.pay_list_c1{width:20px;height:20px;float:right;padding-top:3px;cursor:pointer;text-align:center;background-image:url(../images/pic_pay_way@2x.png);margin-top: 12px;background-repeat:no-repeat;background-position:-20px 0;}
 .radioclass {opacity:0;cursor:pointer;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);}
 .on {background-position:0 0;}
-
 /* card */
 
 
 
 
+/* 温馨提示 */
+.alert {padding:9px;margin-bottom:10px;border-radius:0px;}
+.alert-danger {color: #FCA892;font-size:12px;background-color: #FFF3F0;border-color: #FCE4DE;}
+/* 温馨提示 */
 
-
-
-/* voucher_details */
-/* voucher_details */
 
 
 
@@ -219,7 +245,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 /* code */
 .code{padding:40px 10px;text-align:center}
 .code .code_num{padding:10px;}
-.code .code_remind p{text-align:left;}
+.code .code_remind p{text-align:left;font-size:15px}
 /* code */
 
 
@@ -228,11 +254,11 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 
 /* item */
 .item_index .slide .carousel-inner .item img{width:100%}
-.item_index .slide .countdown{position: absolute;z-index: 15;text-align:center;background:rgba(0,0,0,0.3);width: 100%;top:0;text-align: center;padding:0px;margin-bottom:0px!important;}
+.item_index .slide .countdown{position: absolute;z-index: 15;text-align:center;background:rgba(0,0,0,0.5);width: 100%;top:0;text-align: center;padding:0px;margin-bottom:0px!important;}
 .item_index .slide .countdown p{margin:2px 0;color:#fff;}
 .item_index .item_details{padding:10px;}
-.item_index .item_details .item_title .item_name{float:left;width:80%;border-right:1px solid #ccc;}
-.item_index .item_details .item_title .item_name p{padding-right:10px;margin:0;}
+.item_index .item_details .item_title .item_name{float:left;width:80%;border-right:1px solid #eee;}
+.item_index .item_details .item_title .item_name p{padding-right:10px;margin:0;color:#000;font-size:15px;}
 .item_index .item_details .item_title .item_position{float:left;width:20%;text-align:center}
 .item_index .item_details .item_title .item_position p{line-height:4px}
 .item_index .item_details p span.tag_blue{color: #4697e6;padding: 2px 4px;background: #cfe6fc;margin: 0 5px;border-radius: 2px;}
@@ -246,19 +272,18 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 
 .item_details_nav_box ul.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #e66140;
-    border-bottom: 2px solid #e66140;
+    border-bottom: 3px solid #e66140;
     background: #fff;
 }
 #peitao .card{padding:15px;}
-#peitao .card p{font-size:0.9rem}
+#peitao .card p.c_999{font-size:15px;margin:0;line-height:24px;color:#999}
+#peitao .card p{font-size:14px;margin:0;line-height:24px;color:#000;}
 #xuzhi .xuzhi_con{padding:15px;}
 #xuzhi .xuzhi_con .xuzhi_title{text-align:center;}
-#xuzhi .xuzhi_con .xuzhi_title p{    background: #fff;
-    /* margin-top: -15px; */
-    width: 100px;
-    margin: 0 auto;
+#xuzhi .xuzhi_con .xuzhi_title p{    background: #fff;width: 100px;
+    margin: 0 auto;margin-bottom:15px;
     margin-top: -32px;}
-#xuzhi .xuzhi_con .xuzhi_details p{ font-size:0.9rem}
+#xuzhi .xuzhi_con .xuzhi_details p{ font-size:15px;color:#000}
 /* item */
 
 

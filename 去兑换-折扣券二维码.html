@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>二维码</title>
+	<meta charset="utf-8">	
+	<!-- 手机头 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache" />
+	<!-- 手机头 -->   
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<!-- 二维码 -->
+	<script type="text/javascript" src="js/jquery.qrcode.js"></script>
+	<script type="text/javascript" src="js/qrcode.js"></script>	
+	<!-- 二维码 -->
+    <link href="css/1.css" rel="stylesheet">
+</head>
+<body style="background:#f5f5f5">
+	<div class="easy_header" style="background:#fff;">
+		<a href="" class="left"  style="left:0"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(0, 0, 0);"></span></a>
+		<p>8000抵扣券二维码</p>
+	</div>	
+	<div class="code">
+		<div class="code_img">
+			<div id="qrcodeCanvas" style="width:160px;height:160px;padding:5px;margin:auto;background:#fff"></div>
+			<script>
+				jQuery('#qrcodeCanvas').qrcode({
+					text	: "123456475"
+				});	
+			</script>
+		</div>
+		<div class="code_num">
+			<p class="fs22">激活码：123456789</p>
+		</div>
+		<div class="code_remind">		
+			<p>1. 选定房源，并支付定金时，请出示本券二维码；</p>
+			<p>2. 一张优惠券仅针对一套房源，一套房源仅可使用一张优惠券；</p>
+			<p>3. 同一用户购买一套房源只能购买一张优惠券；</p>
+			<p>4. 本券仅针对开发商指定的房源使用，购券后请尽快兑现，否则房源将可能被售完；</p>
+			<p>5. 客户欲购买的房源被售完时、未兑换的前提下，可申请退款，退款不计利息；</p>
+			<p>6. 本券无法转让、折现，仅限本账号对应购房人使用；</p>
+			<p>7. 二维码兑现后，即视为该券已消费，退定不作为退款理由；</p>
+			<p>8. 优惠券适用房源以开发商告知房源为准；</p>
+			<p>9. 抢先拍平台对该优惠券使用规范拥有最终解释权</p>		
+		</div>
+	</div>
+</body>
+</html>
