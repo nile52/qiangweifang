@@ -157,7 +157,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_title .order_details{padding:10px 0;display:box;display:-webkit-box; display:-moz-box;}
 .card .card_title .order_details .order_details_img{margin-right:10px;}
 .card .card_title .order_details{line-height:1.2rem;}
-.card .card_title .order_details .order_details_con{background:url(../images/into.png) right no-repeat;width:100%;padding-right:20px;     box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
+.card .card_title .order_details .order_details_con{background:url(../images/ic_order_next.png) right no-repeat;width:100%;padding-right:20px;     box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
 .card .card_title .order_details .order_details_con .order_details_text_title{margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
 .card .card_title .order_details .order_details_con .order_details_text_title .area{margin-left:20px}
 .card .card_title .order_details .order_details_img img{width:100px;height:100px}
@@ -321,14 +321,57 @@ height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color:
 
 
 
-
-
-
-
-
 /* 订单缺省 */
 .quesheng{margin:50px;text-align:center;color:#ccc;}
 /* 订单缺省 */
+
+
+
+
+
+/* scan_input */
+.scan_input{width:240px;height:45px;background:#fff;margin:100px auto; 
+border:12px solid #000;border-image-source:url(../images/border.png);  border-image-slice:27 27 27 27;}
+.scan_input input{height:15px;outline:none;border:none;margin-top:-2px}
+.scan_btn{width:260px;margin:auto;}
+.scan_btn button{width:110px;height:36px;color:#fff;border-radius:3px;outline:none;margin:10px;}
+.scan_btn_switch{border:1px solid #fff;background:none;}
+.scan_btn_sure{border:1px solid #e66140;background:#e66140}
+/* scan_input */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

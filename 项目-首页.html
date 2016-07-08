@@ -13,24 +13,37 @@
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <link href="css/1.css" rel="stylesheet">
-	
+    <link href="css/1.css" rel="stylesheet">	
 </head>
-
-
 <body style="">
+	<!-- 页面头部 -->
 	<div class="easy_header" style="background:#fff;">
-		<a href="" class="left"  style="left:0"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(0, 0, 0);"></span></a>
-		<a href="" class="left"  style="right:0"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(0, 0, 0);"></span></a>
+		<a href="活动楼盘.html" class="left"  style="left:0"><img src="images/ic_end_back@2x.png" width="20"></a>
+		<a href="" class="left"  style="right:0"><img src="images/ic_end_share@2x.png" width="20"></a>
 		<p>盛世嘉园</p>
 	</div>	
-
-	
 	<div class="item_index">
 		<div id="myCarousel" class="carousel slide">
 			<div class="countdown">
-				<p class="fs14">03:40:32</p>
-			
+				<p class="fs14" id="down1">0天0小时0分0秒</p>	
+				<script language="javascript" type="text/javascript"> 
+				var interval = 1000; 
+				function ShowCountDown(year,month,day,divname) 
+				{ 
+				var now = new Date(); 
+				var endDate = new Date(year, month-1, day); 
+				var leftTime=endDate.getTime()-now.getTime(); 
+				var leftsecond = parseInt(leftTime/1000); 
+				//var day1=parseInt(leftsecond/(24*60*60*6)); 
+				var day1=Math.floor(leftsecond/(60*60*24)); 
+				var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+				var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+				var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+				var cc = document.getElementById(divname); 
+				cc.innerHTML = day1+"天"+hour+"小时"+minute+"分"+second+"秒"; 
+				} 
+				window.setInterval(function(){ShowCountDown(2018,4,20,'down1');}, interval); 
+				</script> 				
 			</div>				
 		   <!-- 轮播（Carousel）指标 -->
 		   <ol class="carousel-indicators">
@@ -78,163 +91,127 @@
 		</div>		
 		<div class="voucherlist">
 			<div class="voucher">
-				<a href=""><img src="images/quan.png"></a>			
+				<a href="项目-优惠券详情.html"><img src="images/quan.png"></a>			
 			</div>
 			<div class="voucher">
-				<a href=""><img src="images/quan.png"></a>
+				<a href="项目-优惠券详情.html"><img src="images/quan.png"></a>
 			</div>
 			<div class="voucher">
-				<a href=""><img src="images/quan.png"></a>
+				<a href="项目-优惠券详情.html"><img src="images/quan.png"></a>
 			</div>
-		</div>			
-	<div class="item_details_nav_box">
-		<ul id="myTab" class="nav nav-tabs item_details_nav">
-		   <li class="active"><a href="#xiangqing" class="fs09" data-toggle="tab">
-			  详情</a></li>
-		   <li><a href="#peitao" class="fs09"  data-toggle="tab">配套</a></li>
-		   <li><a href="#xuzhi" class="fs09"  data-toggle="tab">活动须知</a></li>
-		</ul>
-	</div>
-	
-
-	<div id="myTabContent" class="tab-content" style="background:#f5f5f5">
-	    <div class="tab-pane fade in active card" id="xiangqing">			
-			<div class="card_con">
-				<p class="order_details_item_list">
-					<span class="order_details_item">开发商</span>
-					<span class="order_details_itemcom">万科股份有限公司</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">产权年限</span>
-					<span class="order_details_itemcom">70年</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">建筑类型</span>
-					<span class="order_details_itemcom">高层</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">装修情况</span>
-					<span class="order_details_itemcom">毛坯</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">建筑面积</span>
-					<span class="order_details_itemcom">700000㎡</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">占地面积</span>
-					<span class="order_details_itemcom">900000㎡</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">容积率</span>
-					<span class="order_details_itemcom">30%</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">绿化率</span>
-					<span class="order_details_itemcom">50%</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">规划数</span>
-					<span class="order_details_itemcom">1040</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">车位数</span>
-					<span class="order_details_itemcom">800</span>
-				</p><div style="clear:both"></div>				
-				<p class="order_details_item_list">
-					<span class="order_details_item">物业公司</span>
-					<span class="order_details_itemcom">高力国际</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">售楼处</span>
-					<span class="order_details_itemcom">江干区形成大厦78号</span>
-				</p><div style="clear:both"></div>
-				<p class="order_details_item_list">
-					<span class="order_details_item">售楼电话</span>
-					<span class="order_details_itemcom">40051214321</span>
-				</p><div style="clear:both"></div>
-				
-				
-				
-				
-				
-				
-				
-			</div>	
+		</div>	
+		<!-- tab -->
+		<div class="item_details_nav_box">
+			<ul id="myTab" class="nav nav-tabs item_details_nav">
+			   <li class="active"><a href="#xiangqing" class="fs09" data-toggle="tab">
+				  详情</a></li>
+			   <li><a href="#peitao" class="fs09"  data-toggle="tab">配套</a></li>
+			   <li><a href="#xuzhi" class="fs09"  data-toggle="tab">活动须知</a></li>
+			</ul>
 		</div>
-	   
-	   
-	   
-	   <div class="tab-pane fade" id="peitao">		
-			<div class="card">
-				<p class="c_999">交通</p>
-				<p class="">新湖香格里拉(公交站)：478路、507路；七贤郡(公交站)：B支8区间2路；地铁站名(地铁N号线)</p>
-			</div>	
-			<div class="card">
-				<p class="c_999">学校</p>
-				<p class="">大学：浙江大学外国语言文化与国际交流学院<br>中学：杭州安吉路良渚实验学校<br>小学：良渚镇第一小学大陆校区、良渚镇第二小学<br>幼儿园：杭州英联幼儿园</p></p>
-			</div>	
-			<div class="card">
-				<p class="c_999">医院</p>
-				<p class="">浙一医院良渚国际体检中心、杭州市余杭区良渚镇大陆卫生院、胡庆余堂名医馆良渚分馆</p>
-			</div>	
-			<div class="card">
-				<p class="c_999">银行</p>
-				<p class="">余杭农村合作银行ATM、中国工商银行24小时自助银行</p>
-			</div>	
-			<div class="card">
-				<p class="c_999">购物</p>
-				<p class="">世纪联华、好又多(大陆村店)、大陆农贸市场</p>
-			</div>	
-	   </div>
-	   
-	   
-	   <div class="tab-pane fade card" id="xuzhi">		
-			<div class="xuzhi_con">
-				<div class="xuzhi_title">							
-					<hr style="color:#000;">
-					<p class="c_red">活动规则</p>
-				</div>
-				<div class="xuzhi_details">
-					<p>1. 选定房源，并支付定金时，请出示本券二维码；
-					<p>2. 一张优惠券仅针对一套房源，一套房源仅可使用一张优惠券；</p>
-					<p>3. 同一用户购买一套房源只能购买一张优惠券；</p>
-					<p>4. 本券仅针对开发商指定的房源使用，购券后请尽快兑现，否则房源将可能被售完；
-					<p>5. 客户欲购买的房源被售完时、未兑换的前提下，可申请退款，退款不计利息；
-					<p>6. 本券无法转让、折现，仅限本账号对应购房人使用；</p>
-					<p>7. 二维码兑现后，即视为该券已消费，退定不作为退款理由；</p>
-					<p>8. 优惠券适用房源以开发商告知房源为准；</p>
-					<p>9. 抢先拍平台对该优惠券使用规范拥有最终解释权</p>
-					<br><p>客服热线：0571-88497932</p>
-				<div>
-			</div>	
-	   </div>
-	  
-	   
-
+		<div id="myTabContent" class="tab-content" style="background:#f5f5f5">
+			<!-- 详情 -->
+			<div class="tab-pane fade in active card" id="xiangqing">			
+				<div class="card_con">
+					<p class="order_details_item_list">
+						<span class="order_details_item">开发商</span>
+						<span class="order_details_itemcom">万科股份有限公司</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">产权年限</span>
+						<span class="order_details_itemcom">70年</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">建筑类型</span>
+						<span class="order_details_itemcom">高层</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">装修情况</span>
+						<span class="order_details_itemcom">毛坯</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">建筑面积</span>
+						<span class="order_details_itemcom">700000㎡</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">占地面积</span>
+						<span class="order_details_itemcom">900000㎡</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">容积率</span>
+						<span class="order_details_itemcom">30%</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">绿化率</span>
+						<span class="order_details_itemcom">50%</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">规划数</span>
+						<span class="order_details_itemcom">1040</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">车位数</span>
+						<span class="order_details_itemcom">800</span>
+					</p><div style="clear:both"></div>				
+					<p class="order_details_item_list">
+						<span class="order_details_item">物业公司</span>
+						<span class="order_details_itemcom">高力国际</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">售楼处</span>
+						<span class="order_details_itemcom">江干区形成大厦78号</span>
+					</p><div style="clear:both"></div>
+					<p class="order_details_item_list">
+						<span class="order_details_item">售楼电话</span>
+						<span class="order_details_itemcom">40051214321</span>
+					</p><div style="clear:both"></div>
+				</div>	
+			</div>
+		   <!-- 配套 -->
+		   <div class="tab-pane fade" id="peitao">		
+				<div class="card">
+					<p class="c_999">交通</p>
+					<p class="">新湖香格里拉(公交站)：478路、507路；七贤郡(公交站)：B支8区间2路；地铁站名(地铁N号线)</p>
+				</div>	
+				<div class="card">
+					<p class="c_999">学校</p>
+					<p class="">大学：浙江大学外国语言文化与国际交流学院<br>中学：杭州安吉路良渚实验学校<br>小学：良渚镇第一小学大陆校区、良渚镇第二小学<br>幼儿园：杭州英联幼儿园</p></p>
+				</div>	
+				<div class="card">
+					<p class="c_999">医院</p>
+					<p class="">浙一医院良渚国际体检中心、杭州市余杭区良渚镇大陆卫生院、胡庆余堂名医馆良渚分馆</p>
+				</div>	
+				<div class="card">
+					<p class="c_999">银行</p>
+					<p class="">余杭农村合作银行ATM、中国工商银行24小时自助银行</p>
+				</div>	
+				<div class="card">
+					<p class="c_999">购物</p>
+					<p class="">世纪联华、好又多(大陆村店)、大陆农贸市场</p>
+				</div>	
+		   </div>
+		   <!-- 配套 -->	   	   
+		   <div class="tab-pane fade card" id="xuzhi">		
+				<div class="xuzhi_con">
+					<div class="xuzhi_title">							
+						<hr style="color:#000;">
+						<p class="c_red">活动规则</p>
+					</div>
+					<div class="xuzhi_details">
+						<p>1. 选定房源，并支付定金时，请出示本券二维码；
+						<p>2. 一张优惠券仅针对一套房源，一套房源仅可使用一张优惠券；</p>
+						<p>3. 同一用户购买一套房源只能购买一张优惠券；</p>
+						<p>4. 本券仅针对开发商指定的房源使用，购券后请尽快兑现，否则房源将可能被售完；
+						<p>5. 客户欲购买的房源被售完时、未兑换的前提下，可申请退款，退款不计利息；
+						<p>6. 本券无法转让、折现，仅限本账号对应购房人使用；</p>
+						<p>7. 二维码兑现后，即视为该券已消费，退定不作为退款理由；</p>
+						<p>8. 优惠券适用房源以开发商告知房源为准；</p>
+						<p>9. 抢先拍平台对该优惠券使用规范拥有最终解释权</p>
+						<br><p>客服热线：0571-88497932</p>
+					</div>
+				</div>	
+		   </div>
+		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-				
-		
-		
-		
-		
-		
-	</div>
-	
-	
-	
-	
-	
-
-
-	
 </body>
 </html>
