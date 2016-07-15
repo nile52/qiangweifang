@@ -270,8 +270,31 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .item_details .item_title .item_position p{line-height:4px}
 .item_index .item_details p span.tag_blue{color: #4697e6;padding: 2px 4px;background: #cfe6fc;margin: 0 5px;border-radius: 2px;}
 .item_index .voucherlist{position:relative;display: block; }
-.item_index .voucherlist .voucher img{width:100%; }
-.item_index .voucherlist .voucher .c_yellow{position: absolute;top: 10px;right: 10px;z-index: 200;height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color: #e66140;font-size: 12px;text-align: center;border-radius: 3px;}
+/* .item_index .voucherlist .voucher img{width:100%; }
+.item_index .voucherlist .voucher .c_yellow{position: absolute;top: 10px;right: 10px;z-index: 200;height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color: #e66140;font-size: 12px;text-align: center;border-radius: 3px;} */
+.item_index .voucherlist{background:#f1f1f1;padding:1px 0 }
+.item_index .voucherlist .voucher{background:url(../images/bj_end_house_coupon@2x.png);background-size:cover;padding-bottom:25%;margin:5px 0; }
+.item_index .voucherlist .voucher .voucher_info{width:80%;float:left }
+.item_index .voucherlist .voucher .voucher_info .voucher_price{width:50%;float:left;padding:0 10px;text-align:center}
+.item_index .voucherlist .voucher .voucher_info .voucher_price h1{color:#e66140;    margin-top: 20%;}
+.item_index .voucherlist .voucher .voucher_info .voucher_price .price_symbol{font-size:20px}
+.item_index .voucherlist .voucher .voucher_info .voucher_price .price_price{font-size:30px}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions{width:50%;float:left;text-align:center;;padding:0 10px;margin-top:5%}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;}
+.item_index .voucherlist .voucher .voucher_submit{width:20%;float:left}
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn{background:#fff;width:80%;margin:0 auto;margin-top:50%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;}
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn a{color:#e66140}
+
+
+
+
+
+
+
+
+
+
 
 .item_details_nav.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {border:none;text-align:center;}
 .item_details_nav.nav-tabs>li {width:33.3%;}
