@@ -164,6 +164,14 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con{border-bottom:1px solid #eee;padding:0 15px;}
 .card .card_state{padding:0 15px;}
 .card .card_state p{line-height:48px;margin:0;color:#e66140;font-size:17px}
+
+
+
+
+
+
+
+
 .card .card_con p{font-size:15px;color:#666;/* padding:14px 0; */margin:0;line-height:44px}
 .card .card_con p.refund_reason_list{border-bottom:1px solid #eee;}
 .card .card_con p.refund_reason_list .refund_reason{color:#333}
@@ -252,6 +260,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 /* code */
 .code{padding:40px 10px;text-align:center}
 .code .code_num{padding:10px;}
+.code .code_num .printscreen{color: #e66140;font-size:12px}
 .code .code_remind p{text-align:left;font-size:15px}
 /* code */
 
@@ -283,9 +292,9 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140}
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;}
 .item_index .voucherlist .voucher .voucher_submit{width:20%;float:left}
-.item_index .voucherlist .voucher .voucher_submit .voucher_btn{background:#fff;width:80%;margin:0 auto;margin-top:50%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;}
-.item_index .voucherlist .voucher .voucher_submit .voucher_btn a{color:#e66140}
-
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn{width:80%;margin:0 auto;margin-top:25%;text-align:center;}
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn a{background:#fff;margin:0 auto;margin-top:5%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;padding:2px 5px;}
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn p{margin:0px;color: #fff;font-weight: bold;}
 
 
 
@@ -307,6 +316,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 }
 #peitao .card{padding:15px;}
 #peitao .card p.c_999{font-size:15px;margin:0;line-height:24px;color:#999}
+#peitao .card p.c_999 img{margin-bottom:4px}
 #peitao .card p{font-size:14px;margin:0;line-height:24px;color:#000;}
 #xuzhi .xuzhi_con{padding:15px;}
 #xuzhi .xuzhi_con .xuzhi_title{text-align:center;}
@@ -370,7 +380,10 @@ border:12px solid #000;border-image-source:url(../images/border.png);  border-im
 
 
 
-
+@media( max-width:375px ){
+    .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit {font-size: 12px;}
+    .item_index .voucherlist .voucher .voucher_submit .voucher_btn a{font-size: 12px}   
+}
 
 
 

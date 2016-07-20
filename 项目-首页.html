@@ -40,7 +40,7 @@
 				var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
 				var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
 				var cc = document.getElementById(divname); 
-				cc.innerHTML = day1+"天"+hour+"小时"+minute+"分"+second+"秒"; 
+				cc.innerHTML = "距抢拍结束仅剩："+day1+"天"+hour+"小时"+minute+"分"+second+"秒"; 
 				} 
 				window.setInterval(function(){ShowCountDown(2018,4,20,'down1');}, interval); 
 				</script> 				
@@ -88,7 +88,9 @@
 			</div><div class="clearfix"></div>			
 			<p class="c_69 fs12">均价：<span class="c_red fs20">￥1,580,000</span><span class="tag_blue">住宅</span></p>
 			<p class="c_999 fs12">交房时间：<span class="">2018.01.01</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开盘时间：<span class="">2018.01.01</span></p>
-		</div>		
+			<p class="c_red fs12">抢拍以下优惠券，成功置业可免费获得抢先拍为您送出的微波炉好礼一台</p>
+		</div>	
+		<div class="alert alert-danger">抢拍以下优惠券，成功置业可免费获得抢先拍为您送出的微波炉好礼一台</div>	
 		<div class="voucherlist">
 			<div class="voucher">
 				<div class="voucher_info">				
@@ -96,12 +98,32 @@
 						<h1><span class="price_symbol">￥</span><span class="price_price">100000</span></h1>
 					</div>						
 					<div class="voucher_instructions">
-						<p class="voucher_type">现金抵扣券</p>
+						<p class="voucher_type">房款抵扣券</p>
 						<p class="voucher_limit">90㎡以下户型适用</p>							
 					</div>								
 				</div>				
 				<div class="voucher_submit">
-					<div class="voucher_btn"><a href="项目-优惠券详情.html" >马上抢</a></div>
+					<div class="voucher_btn">
+						<p class="true_price">￥1000</p>
+						<a href="项目-优惠券详情.html" >马上抢</a>
+					</div>
+				</div>
+			</div>
+			<div class="voucher">
+				<div class="voucher_info">				
+					<div class="voucher_price">
+						<h1><span class="price_price">9</span><span class="price_symbol">折</span></h1>
+					</div>						
+					<div class="voucher_instructions">
+						<p class="voucher_type">房款折扣券</p>
+						<p class="voucher_limit">90㎡以下户型适用</p>							
+					</div>								
+				</div>				
+				<div class="voucher_submit">
+					<div class="voucher_btn">
+						<p class="true_price">￥1000</p>
+						<a href="项目-优惠券详情.html" >马上抢</a>
+					</div>
 				</div>
 			</div>
 			<div class="voucher">
@@ -110,26 +132,15 @@
 						<h1><span class="price_symbol">￥</span><span class="price_price">100000</span></h1>
 					</div>						
 					<div class="voucher_instructions">
-						<p class="voucher_type">现金抵扣券</p>
+						<p class="voucher_type">房款抵扣券</p>
 						<p class="voucher_limit">90㎡以下户型适用</p>							
 					</div>								
 				</div>				
 				<div class="voucher_submit">
-					<div class="voucher_btn"><a href="项目-优惠券详情.html" >马上抢</a></div>
-				</div>
-			</div>
-			<div class="voucher">
-				<div class="voucher_info">				
-					<div class="voucher_price">
-						<h1><span class="price_symbol">￥</span><span class="price_price">100000</span></h1>
-					</div>						
-					<div class="voucher_instructions">
-						<p class="voucher_type">现金抵扣券</p>
-						<p class="voucher_limit">90㎡以下户型适用</p>							
-					</div>								
-				</div>				
-				<div class="voucher_submit">
-					<div class="voucher_btn"><a href="项目-优惠券详情.html" >马上抢</a></div>
+					<div class="voucher_btn">
+						<p class="true_price">￥1000</p>
+						<a href="项目-优惠券详情.html" >马上抢</a>
+					</div>
 				</div>
 			</div>			
 			
@@ -204,23 +215,23 @@
 		   <!-- 配套 -->
 		   <div class="tab-pane fade" id="peitao">		
 				<div class="card">
-					<p class="c_999">交通</p>
+					<p class="c_999"><img src="images/traffic.png" width="16"> 交通</p>
 					<p class="">新湖香格里拉(公交站)：478路、507路；七贤郡(公交站)：B支8区间2路；地铁站名(地铁N号线)</p>
 				</div>	
 				<div class="card">
-					<p class="c_999">学校</p>
+					<p class="c_999"><img src="images/school.png" width="16"> 学校</p>
 					<p class="">大学：浙江大学外国语言文化与国际交流学院<br>中学：杭州安吉路良渚实验学校<br>小学：良渚镇第一小学大陆校区、良渚镇第二小学<br>幼儿园：杭州英联幼儿园</p></p>
 				</div>	
 				<div class="card">
-					<p class="c_999">医院</p>
+					<p class="c_999"><img src="images/medical.png" width="16"> 医院</p>
 					<p class="">浙一医院良渚国际体检中心、杭州市余杭区良渚镇大陆卫生院、胡庆余堂名医馆良渚分馆</p>
 				</div>	
 				<div class="card">
-					<p class="c_999">银行</p>
+					<p class="c_999"><img src="images/bank.png" width="16"> 银行</p>
 					<p class="">余杭农村合作银行ATM、中国工商银行24小时自助银行</p>
 				</div>	
 				<div class="card">
-					<p class="c_999">购物</p>
+					<p class="c_999"><img src="images/shop.png" width="16"> 购物</p>
 					<p class="">世纪联华、好又多(大陆村店)、大陆农贸市场</p>
 				</div>	
 		   </div>

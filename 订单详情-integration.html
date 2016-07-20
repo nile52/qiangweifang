@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>订单详情-待支付</title>
+	<meta charset="utf-8">	
+	<!-- 手机头 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache" />
+	<!-- 手机头 -->   
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="css/1.css" rel="stylesheet">
+</head>
+<body style="background:#f5f5f5;height:100%">
+	<!-- 页面头部 -->
+	<div class="easy_header" style="background:#fff;">
+		<a href="我的订单.html" class="left"  style="left:0"><img src="images/ic_end_back@2x.png" width="20"></a>
+		<p class="">订单详情</p>
+	</div>
+	<!-- 订单状态 -->
+	<div class="card">
+		<div class="card_state">
+			<p class="">待支付</p>
+<!-- 			<p class="">已支付</p>
+			<p class="">退款中</p>
+			<p class="">已退款</p>
+			<p class="">券失效</p>
+			<p class="">已取消</p>
+			<p class="">已兑换</p> -->
+		</div>
+	</div>	
+	<!-- 订单详情 -->
+	<div class="card">
+		<div class="card_title">
+			<p>
+				<span class="refund_name">8000抵扣券</span>
+				<span class="refund_price">1000.00元</span>
+			</p><div class="clearfix"></div>
+		</div>
+		<div class="card_title">
+			<a href="项目-优惠券详情.html"><div class="order_details">
+				<div class="order_details_img">
+					<img src="images/order_details_img1.jpg">
+				</div>
+				<div class="order_details_con">
+					<div class="order_details_text">				
+						<p class="order_details_text_title fs16 c_333">湖光山色湖光山色 <span class="area">133.30㎡</span></p>
+						<p class="order_details_text_address fs12 c_999">杭州江干区湖光山庄江干区湖光山庄江干区湖光山庄</p>
+					</div>		
+				</div>
+			</div></a>
+		</div>
+		<div class="card_con">
+			<p class="order_details_item_list">
+				<span class="order_details_item">订单号</span>
+				<span class="order_details_itemcom">423535231</span>
+			</p><div class="clearfix"></div>
+			<p class="order_details_item_list">
+				<span class="order_details_item">绑定手机</span>
+				<span class="order_details_itemcom">158135648456</span>
+			</p><div class="clearfix"></div>
+			<!-- 待支付状态，付款时间隐藏或为空 -->
+			<p class="order_details_item_list">
+				<span class="order_details_item">付款时间</span>
+				<span class="order_details_itemcom">2016.06.06 09:00</span>
+			</p><div class="clearfix"></div>			
+			<p class="content">
+				<a href="">联系客服</a>
+			</p>
+		</div>		
+	</div>			
+	<div class="fixed_btn_adjust"><!-- 这个用来调节高度 --></div>
+	<!-- 底部固定button 对应头部7种状态；退款详情功能待开发；注：底部单个button的和两个button的类名不一样； -->	
+	<div class="fixed_btm_btn">
+		<!-- 已退款、退款中、已取消、已兑换，这4种状态没有用户操作button -->
+	</div>		
+	<!-- 已支付 -->
+	<div class="fixed_btm_btn btn_paid">
+		<button class="c_fff" onclick="window.location='申请退款.html'">去退款</button> <button class="c_red" onclick="window.location='去兑换-折扣券二维码.html'" >去兑换</button>	
+	</div>		
+	<!-- 券失效 -->
+	<div class="fixed_btm_btn">
+		<button class="" onclick="">去退款</button>		
+	</div>		
+	<!-- 待支付 -->
+	<div class="fixed_btm_btn">
+		<button class="c_fff" onclick="">取消订单</button> <button class="c_red" onclick="window.location='提交订单.html'" >去支付</button>	
+	</div>
+</body>
+</html>
