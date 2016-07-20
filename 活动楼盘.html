@@ -97,7 +97,7 @@
 					<img src="images/1.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">专题</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down11">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -107,7 +107,7 @@
 					<img src="images/2.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">热销</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down12">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">万达•锦绣山庄</span><br>
 						<span class="big">8000元房款抵扣券 超值开抢</span></p>
@@ -117,7 +117,7 @@
 					<img src="images/3.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">独家</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down13">0天0小时0分0秒</p></div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9.5折优惠券 限时秒杀</span></p>
@@ -127,7 +127,7 @@
 					<img src="images/4.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">文案</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down14">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -135,7 +135,7 @@
 				</a>				
 				<p style="text-align:center;color:#ccc;font-size:13px;padding:15px 0">没有更多，更换筛选条件，可获得更多房源~</p>
 			</div>	
-	   </div>	   
+	   </div>	 	   
 	   <!-- 即将上线 -->  
 	   <div class="tab-pane fade" id="yushou">
 			<div class="toolbar">
@@ -211,7 +211,7 @@
 					<img src="images/4.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">专题</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down21">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -221,7 +221,7 @@
 					<img src="images/4.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">专题</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down22">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -231,7 +231,7 @@
 					<img src="images/4.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">专题</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down23">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -241,7 +241,7 @@
 					<img src="images/4.jpg">
 					<div class="icon-vi"></div>
 					<div class="tips">专题</div>
-					<div class="countdown">倒计时 19天：19时：19分：19秒</div>
+					<div class="countdown" id="down24">0天0小时0分0秒</div>
 					<div class="info_ads">
 						<p><span class="small">翡翠城•胡煌山色</span><br>
 						<span class="big">9折优惠券 限时秒杀</span></p>
@@ -263,5 +263,26 @@
 });
 </script>	
 <!-- 选项卡切换 -->	
+<script language="javascript" type="text/javascript"> 
+	var interval = 1000; 
+	function ShowCountDown(year,month,day,divname) 
+	{ 
+	var now = new Date(); 
+	var endDate = new Date(year, month-1, day); 
+	var leftTime=endDate.getTime()-now.getTime(); 
+	var leftsecond = parseInt(leftTime/1000); 
+	//var day1=parseInt(leftsecond/(24*60*60*6)); 
+	var day1=Math.floor(leftsecond/(60*60*24)); 
+	var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+	var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+	var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+	var cc = document.getElementById(divname); 
+	cc.innerHTML ="倒计时："+day1+"天:"+hour+"小时:"+minute+"分:"+second+"秒"; 
+	} 
+	window.setInterval(function(){ShowCountDown(2018,4,20,'down11');}, interval); 
+	window.setInterval(function(){ShowCountDown(2018,4,20,'down12');}, interval); 
+	window.setInterval(function(){ShowCountDown(2018,4,20,'down13');}, interval); 
+	window.setInterval(function(){ShowCountDown(2018,4,20,'down14');}, interval); 
+</script> 	
 </body>
 </html>
