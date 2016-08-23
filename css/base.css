@@ -1,11 +1,12 @@
 ﻿/* public */
 html{font-size:100%;}
 body{width:100%;font-size:16px;font-family:"黑体","Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;}
+@media (max-width: 540px) {
+    body {font-size:14px}
+    h1 {font-size:20px}
+}
 .left{float:left}
 .right{float:right}
-
-
-
 
 
 .fs70{font-size:70px}
@@ -25,19 +26,6 @@ body{width:100%;font-size:16px;font-family:"黑体","Lantinghei SC", "Open Sans"
 .c_333{color:#333}
 .c_999{color:#999}
 .c_fff{color:#fff}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 a:active{text-decoration:none}
 a:hover{text-decoration:none}
@@ -64,9 +52,6 @@ a:hover{text-decoration:none}
 /* developer_header */
 
 
-
-
-
 /* fixed_btm_btn */
 .fixed_btm_btn{position:fixed;bottom:0;width: 100%;}
 .fixed_btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;font-size:15px;height:44px}
@@ -77,6 +62,8 @@ a:hover{text-decoration:none}
 .btm_btn{padding:30px 15px 10px 15px}
 .btm_btn button{background: #e66140;color: #fff;outline: none;width: 100%;border: none;font-size:15px;height:44px;border-radius:3px}
 
+.logout{margin-top:20px;}
+.logout a{display:block;background: #e66140;color: #fff;outline: none;width: 100%;font-size:15px;height:44px;line-height:44px;text-align:center;}
 
 
 /* 模态框（Modal） */
@@ -87,12 +74,10 @@ a:hover{text-decoration:none}
 .modal-dialog {margin: 50% 10px;}
 /* fixed_btm_btn */
 
-.dianjiqiangpai{position:fixed;bottom:0;width:100%;z-index: 16;}
+.dianjiqiangpai{position:fixed;bottom:0;width:100%; z-index:16;}
 .dianjiqiangpai .qiangbai_price{width:30%;background:#fff;color:#e66140;float:left;line-height:50px;text-align:center}
 .dianjiqiangpai .qiangbai_btn{width:70%;background:#e66140;color:#fff;float:left;line-height:50px;text-align:center}
 .dianjiqiangpai .qiangbai_btn a{color:#fff}
-
-
 
 
 /* index */
@@ -114,7 +99,7 @@ a:hover{text-decoration:none}
 .toolbar .p25{width:33.3%;float:left;}
 .toolbar .p25 .btn {background: #fff;outline:none;padding:0;font-size:15px;    color: #666;}
 .toolbar .p25 .btn:active {box-shadow:none;}
-.dropdown-menu {min-width: 0;}	
+.dropdown-menu {min-width: 0;}
 .index_container .item {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;margin-bottom:5px;box-shadow:0px 1px 1px #eee;		}
 .index_container .item img{width:100%;}
 .index_container .item .tips {position: absolute;top:5px;z-index: 200;line-height:24px;padding: 0 7px;background:rgba(0,0,0,0.5);color:#e66140;font-size:12px;text-align: center;padding:0px 5px;right:5px;border-radius:2px}
@@ -132,14 +117,12 @@ a:hover{text-decoration:none}
 .search .search_warp{width:90%;}
 .search_warp form.back{border-radius: 18px;background: #eee;}
 .search_warp form>.left{background: #eee;border:1px solid #ddd;border-radius: 20px;width: 84%;padding: 0 10px;margin:2px 0;}
-.search_warp .search_icon {width: 20px;}
-.search_warp .search_icon img{width: 20px;}
+.search_warp .search_icon {width: 20px;margin-top:2px;}
+.search_warp .search_icon img{width: 20px;vertical-align:middle;}
 .search_warp .search_box{padding:0 5px;}
 .search_warp .search_box input {height:28px;border: none;font-size: 14px;background:#eee;outline:none;min-width:160px}
 input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#e66140;line-height:30px;font-size:13px;outline:none;}
 /* search */
-
-
 
 
 /* card */
@@ -147,9 +130,6 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_card{box-shadow: 0px 1px 1px #eee;margin-top:10px;background:#fff}
 .card .card_title{border-bottom:1px solid #eee;line-height:49px;padding:0 15px;}
 .item_card .card .card_title{border-bottom:1px solid #eee;padding:15px;line-height:25px}
-
-
-
 
 .refund .card_title{height:36px;line-height:36px}
 .card .card_title p{margin:0}
@@ -164,14 +144,6 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con{border-bottom:1px solid #eee;padding:0 15px;}
 .card .card_state{padding:0 15px;}
 .card .card_state p{line-height:48px;margin:0;color:#e66140;font-size:17px}
-
-
-
-
-
-
-
-
 .card .card_con p{font-size:15px;color:#666;/* padding:14px 0; */margin:0;line-height:44px}
 .card .card_con p.refund_reason_list{border-bottom:1px solid #eee;}
 .card .card_con p.refund_reason_list .refund_reason{color:#333}
@@ -200,7 +172,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con table td,.card .card_con table tr{font-size:13px;}
 .card .card_con table td{padding:10px 0;text-align:center}
 .card .card_con table tr{padding:10px 0;border-bottom:1px solid #eee}
-.card .card_con p.order_details_item_list .order_details_itemcom{color:#000;}
+.card .card_con p.order_details_item_list .order_details_itemcom{color:#000;display: inline-block;}
 .card .card_con p.content{text-align:center}
 .card .card_con p.content a{color:#e66140;font-size:16px}
 .card .card_con p.refund_reason_list:first-child{border-bottom:0px solid #eee;}
@@ -233,8 +205,6 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 /* 温馨提示 */
 
 
-
-
 /* exchange_success */
 .exchange_success{text-align:center;}
 .exchange_success img{width:150px;margin:20px 0;}
@@ -242,11 +212,6 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .c100 {font-size: 120px;float: right;margin: 0 15px;top: -70px;background-color: #fdf5f3;}
 .c100.small {font-size: 60px;}
 /* exchange_success */
-
-
-
-
-
 
 
 
@@ -260,16 +225,14 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 /* code */
 .code{padding:40px 10px;text-align:center}
 .code .code_num{padding:10px;}
-.code .code_num .printscreen{color: #e66140;font-size:12px}
 .code .code_remind p{text-align:left;font-size:15px}
 /* code */
 
 
-
-
-
 /* item */
-.item_index .slide .carousel-inner .item img{width:100%}
+.carousel-inner>.item.next.left img, .carousel-inner>.item.prev.right img, .carousel-inner>.item.active img{width:100% !important;}
+/*.item_index .slide .carousel-inner .item img{width:100% !important;}*/
+.item_index .slide .carousel-inner img{width:100% !important;}
 .item_index .slide .countdown{position: absolute;z-index: 15;text-align:center;background:rgba(0,0,0,0.5);width: 100%;top:0;text-align: center;padding:0px;margin-bottom:0px!important;}
 .item_index .slide .countdown p{margin:2px 0;color:#fff;}
 .item_index .item_details{padding:10px;}
@@ -284,24 +247,16 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .voucherlist{background:#f1f1f1;padding:1px 0 }
 .item_index .voucherlist .voucher{background:url(../images/bj_end_house_coupon@2x.png);background-size:cover;padding-bottom:25%;margin:5px 0; }
 .item_index .voucherlist .voucher .voucher_info{width:80%;float:left }
-.item_index .voucherlist .voucher .voucher_info .voucher_price{width:50%;float:left;padding:0 10px;text-align:center}
-.item_index .voucherlist .voucher .voucher_info .voucher_price h1{color:#e66140;    margin-top: 20%;}
-.item_index .voucherlist .voucher .voucher_info .voucher_price .price_symbol{font-size:20px}
-.item_index .voucherlist .voucher .voucher_info .voucher_price .price_price{font-size:30px}
-.item_index .voucherlist .voucher .voucher_info .voucher_instructions{width:50%;float:left;text-align:center;;padding:0 10px;margin-top:5%}
-.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140}
-.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;}
+.item_index .voucherlist .voucher .voucher_info .voucher_price{width:50%;float:left;padding:0 10px;text-align:center;overflow:hidden;}
+.item_index .voucherlist .voucher .voucher_info .voucher_price h1{color:#e66140;margin-top: 20%;}
+.item_index .voucherlist .voucher .voucher_info .voucher_price .price_symbol{font-size:0.8em}
+.item_index .voucherlist .voucher .voucher_info .voucher_price .price_price{font-size:1.875rem}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions{width:50%;float:left;text-align:center;;padding:0 10px;margin-top:6%;overflow:hidden;}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140;font-size:1em;height:20px;line-height:20px;overflow:hidden;}
+.item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;font-size:0.8em;height:18px;line-height:18px;overflow:hidden;}
 .item_index .voucherlist .voucher .voucher_submit{width:20%;float:left}
-.item_index .voucherlist .voucher .voucher_submit .voucher_btn{width:80%;margin:0 auto;margin-top:25%;text-align:center;}
-.item_index .voucherlist .voucher .voucher_submit .voucher_btn a{background:#fff;margin:0 auto;margin-top:5%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;padding:2px 5px;}
-.item_index .voucherlist .voucher .voucher_submit .voucher_btn p{margin:0px;color: #fff;font-weight: bold;}
-
-
-
-
-
-
-
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn{background:#fff;width:90%;margin:0 auto;margin-top:50%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;}
+.item_index .voucherlist .voucher .voucher_submit .voucher_btn a{color:#e66140}
 
 
 
@@ -316,7 +271,6 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 }
 #peitao .card{padding:15px;}
 #peitao .card p.c_999{font-size:15px;margin:0;line-height:24px;color:#999}
-#peitao .card p.c_999 img{margin-bottom:4px}
 #peitao .card p{font-size:14px;margin:0;line-height:24px;color:#000;}
 #xuzhi .xuzhi_con{padding:15px;}
 #xuzhi .xuzhi_con .xuzhi_title{text-align:center;}
@@ -328,20 +282,12 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 
 
 
-
-
-
-
-
-
-
-
 /* item_details */
 .item_details_countdown{padding:15px;text-align:center}
 #fnTimeCountDown{font-size:.8em;line-height:2em;}
 #fnTimeCountDown span.num{padding:5px 2px;background:#000;color:#fff;margin:1px;border-radius:2px}
 #fnTimeCountDown span.hm{padding:5px 2px;background:red;color:#fff;margin:1px;border-radius:2px}
-.card .houseype_img img{width:100%}
+.card .houseype_img img{width:100%;}
 .card .houseype_text{padding:15px}
 .card .houseype_text p{font-size:14px;color:#666;}
 .card .houseype_text p .houseype_details{float:right}
@@ -352,65 +298,24 @@ height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color:
 /* item_details */
 
 
-
-
 /* 订单缺省 */
 .quesheng{margin:50px;text-align:center;color:#ccc;}
 /* 订单缺省 */
 
 
-
-
-
 /* scan_input */
-.scan_input{width:240px;height:45px;background:#fff;margin:100px auto; 
+.scan_input{width:240px;height:45px;background:#fff;margin:100px auto;
 border:12px solid #000;border-image-source:url(../images/border.png);  border-image-slice:27 27 27 27;}
 .scan_input input{height:15px;outline:none;border:none;margin-top:-2px}
 .scan_btn{width:260px;margin:auto;}
 .scan_btn button{width:110px;height:36px;color:#fff;border-radius:3px;outline:none;margin:10px;}
 .scan_btn_switch{border:1px solid #fff;background:none;}
 .scan_btn_sure{border:1px solid #e66140;background:#e66140}
+
+.scan_btn .scancode{display:inline-block;width:110px;height:36px;color:#fff;border-radius:3px;outline:none;margin:10px;}
 /* scan_input */
 
 
 
-
-
-
-
-
-
-@media( max-width:375px ){
-    .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit {font-size: 12px;}
-    .item_index .voucherlist .voucher .voucher_submit .voucher_btn a{font-size: 12px}   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.carousel-inner>.active {max-height:300px;}*/
 
