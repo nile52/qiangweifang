@@ -261,10 +261,13 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140;font-size:1em;height:20px;line-height:20px;overflow:hidden;}
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;font-size:0.8em;height:18px;line-height:18px;overflow:hidden;}
 .item_index .voucherlist .voucher .voucher_submit{width:30%;float:left;text-align: center;color: #fff;padding:15px 0}
+@media screen and (max-width: 360px) {
+	.item_index .voucherlist .voucher .voucher_submit{width:30%;float:left;text-align: center;color: #fff;padding:13px 0}
+}
 @media screen and (max-width: 350px) {
 	.item_index .voucherlist .voucher .voucher_submit{width:30%;float:left;text-align: center;color: #fff;padding:8px 0}
 }
-.item_index .voucherlist .voucher .voucher_submit p{margin:-5px}
+.item_index .voucherlist .voucher .voucher_submit p{margin:-5px 0}
 .item_index .voucherlist .voucher .voucher_submit p.true_price{font-size:1.5rem;font-weight:bold}
 .item_index .voucherlist .voucher .voucher_submit .voucher_btn{background:#fff;width:90%;margin:0 auto;margin-top:50%;text-align:center;border-radius:3px;font-size:14px;color:#e66140;}
 .item_index .voucherlist .voucher .voucher_submit .voucher_btn a{color:#e66140}
@@ -327,7 +330,9 @@ border:12px solid #000;border-image-source:url(../images/border.png);  border-im
 .scan_btn .scancode{display:inline-block;width:110px;height:36px;color:#fff;border-radius:3px;outline:none;margin:10px;}
 /* scan_input */
 
-
-
 /*.carousel-inner>.active {max-height:300px;}*/
-
+/* 二维码加logo */
+.qrcodeCanvas .codepic{width:150px;height:150px}
+.qrcodeCanvas{position:relative}
+.qrcodeCanvas .logopic{position:absolute;top:60px;left:60px}
+.qrcodeCanvas .logopic img{width:40px}
