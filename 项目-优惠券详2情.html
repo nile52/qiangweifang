@@ -13,7 +13,7 @@
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <link href="css/1.css" rel="stylesheet">	
+    <link href="css/base.css" rel="stylesheet">	
 </head>
 <body style="background:#f5f5f5">
 	<!-- 页面头部 -->
@@ -157,8 +157,8 @@
 		</div>
 		<div class="houseype_text">
 			<p><span class="c_red fs17">A1户型</span> <span class="houseype_details">3室1厅1卫，89㎡，约150万</span></p>
-			<div class="clearfix"></div>
-			<p>该户型目前还有203、208、302、3套房源还在售</p>
+			<div class="clearfix"></div><!-- 加清浮动 -->
+			<p class="add_border"><!-- 加类名 -->该户型目前还有203、208、302、3套房源还在售</p>
 		</div>
 	</div>		
 	<div class="card">	
@@ -187,14 +187,15 @@
 		</div>
 		<div class="houseype_text">
 			<p><span class="c_red fs17">A1户型</span> <span class="houseype_details">3室1厅1卫，89㎡，约150万</span></p>
-			<p>该户型目前还有203、208、302、3套房源还在售</p>
+			<div class="clearfix"></div><!-- 加清浮动 -->
+			<p class="add_border"><!-- 加类名 -->该户型目前还有203、208、302、3套房源还在售</p>
 		</div>
 	</div>
 	<!-- 底部固定button -->
 	<div class="fixed_btn_adjust"></div>		
-	<div class="dianjiqiangpai">	
-		<div class="qiangbai_price fs20">￥1000</div>
-		<div class="qiangbai_btn"><a href="提交订单.html">点击抢拍</a></div>
+	<div class="dianjiqiangpai">			
+		<div class="qiangbai_btn fs16"><a href="提交订单.html"><span class="fs24">￥1000</span> | <img src="images/tick.png" width="35">点击抢拍</a></div>
+		<div class="qiangbai_price fs14"><img src="images/phone.png" width="20"> 客服</div>
 	</div>		
 <!-- 加入图片拖拽 -->
 <script src="js/hammer.js"></script>				

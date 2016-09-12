@@ -27,7 +27,7 @@
 	
 		
 		<!-- 轮播改动开始 -->
-	
+
 		<div id="mySwipe" class="carousel slide swipe">	
 			<!-- 轮播图片，这个div要放在最上面 -->
 			<div class="swipe-wrap">
@@ -51,7 +51,7 @@
 		#mySwipe div img {width:100%}
 		.swipe {overflow: hidden;visibility: hidden;position: relative;}
 		.swipe-wrap {overflow: hidden;position: relative;}
-		.swipe-wrap > div {float:left;width:100%;position: relative;}
+		.swipe-wrap div {float:left;width:100%;position: relative;}
 		#pager{position: absolute;text-align: center;bottom:15px;width: 100%;}
 		#pager span {width: 5px;height: 5px;margin: 0;padding: 0;background:#fff;display: inline-block;border-radius:50%;text-indent: -1000px;margin:0 5px}
 		#pager span.on {background:#e66140;}
@@ -92,16 +92,52 @@
 		<div class="item_details">		
 			<div class="item_title">
 				<div class="item_name">
-					<p>杭州市余杭区良渚镇香格里拉别墅云栖苑苑苑苑苑苑苑苑苑苑苑苑苑苑苑苑</p>				
+					<p>杭州市余杭区良渚镇香格里拉别墅云栖苑苑苑苑苑苑苑苑苑苑苑苑苑苑苑苑</p>			
 				</div>				
 				<div class="item_position">
 					<p><img src="images/ic_end_house_location@2x.png" width="20"></p>				
 				</div>				
-			</div><div class="clearfix"></div>			
-			<p class="c_69 fs12">均价：<span class="c_red fs20">￥1,580,000</span><span class="tag_blue">住宅</span></p>
-			<p class="c_999 fs12" style="text-align:right">活动截止时间：<span class="c_red">2018.01.01</span></p>
+			</div><div class="clearfix"></div>
+			<div class="item_title">
+				<div class="item_other">
+					<p class="c_69 fs12">均价：<span class="c_red fs20">￥1,580,000</span><span class="tag_blue">住宅</span></p>
+					<p class="c_999 fs12">活动到期时间：<span class="">2017-05-27</span></p>			
+				</div>				
+				<div class="item_position">
+					<img class="getgift" src="images/gift.png" width="100" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Gift">			
+
+
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="Gift" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="myModalLabel">
+										<img src="images/logo_white.png" width="75">
+									</h4>
+								</div>
+								<div class="modal-body">
+									购买优惠券，并至案场完成签约之后，输入指定信息，可获得平台送出的置业好礼。礼物类型根据当期活动规定，不另行通知。
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" 
+											data-dismiss="modal">关闭
+									</button>
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+
+
+
+				</div>				
+			</div><div class="clearfix"></div>		
 		</div>	
-		<div class="alert alert-danger">抢拍以下优惠券，成功置业可免费获得抢先拍为您送出的微波炉好礼一台</div>	
+
+
+
+
+
 		<div class="voucherlist">
 			<a href="项目-优惠券详情.html"><div class="voucher">
 				<div class="voucher_info">				

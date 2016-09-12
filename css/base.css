@@ -39,7 +39,7 @@ a:hover{text-decoration:none}
 
 /* easy_header */
 .easy_header{position:relative;z-index:8888;border-bottom: 1px solid #ccc;color: #666;text-align: center;}
-.easy_header p{padding:15px 0;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:17px;color:e66140}
+.easy_header p{padding:15px 25px;text-align: center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:17px;}
 .easy_header a{position: absolute;line-height:55px;padding:0 10px;}
 /* easy_header */
 
@@ -78,6 +78,7 @@ a:hover{text-decoration:none}
 .dianjiqiangpai .qiangbai_price{width:30%;background:#fff;color:#e66140;float:left;line-height:50px;text-align:center}
 .dianjiqiangpai .qiangbai_btn{width:70%;background:#e66140;color:#fff;float:left;line-height:50px;text-align:center}
 .dianjiqiangpai .qiangbai_btn a{color:#fff}
+.dianjiqiangpai .qiangbai_btn a span.fs24{font-weight:bold;font-size:24px}
 
 
 /* index */
@@ -97,12 +98,16 @@ a:hover{text-decoration:none}
 }
 .toolbar{text-align:center;height:45px;line-height:45px;}
 .toolbar .p25{width:33.3%;float:left;}
-.toolbar .p25 .btn {background:rgb(245,245,245);outline:none;padding:0;font-size:15px;    color: #666;}
+.toolbar .p25 .btn {background:rgb(245,245,245);outline:none;padding:0;font-size:15px;color: #666;}
 .toolbar .p25 .btn:active {box-shadow:none;}
 .dropdown-menu {min-width: 0;}
-.index_container .item {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;margin-bottom:1px;box-shadow:0px 1px 1px #eee;		}
+.dropdown-menu li a {padding: 3px 10px;border-bottom: 2px dotted #eee;margin: 0 10px;}
+.dropdown-menu li:last-child a {border-bottom:0;}
+.index_container .item {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;margin-bottom:1px;box-shadow:0px 1px 1px #eee;}
 .index_container .item img{width:100%;}
-.index_container .item .tips {position: absolute;top:5px;z-index: 200;line-height:24px;padding: 0 7px;background:rgba(0,0,0,0.5);color:#e66140;font-size:12px;text-align: center;padding:0px 5px;right:5px;border-radius:2px}
+.index_container .item .tips {position: absolute;top: 7px;right: -24px;z-index: 200;	line-height: 25px;width: 80px;font-size: 12px;font-weight:bold;text-align: center;color: #fff;transform: rotate(45deg);border-bottom: 25px solid red; ;border-left: 25px solid transparent;border-right: 25px solid transparent;height: 0;}
+.index_container .item .tips.dujia {border-bottom: 25px solid #ea7043;}
+.index_container .item .tips.rexiao {border-bottom: 25px solid #cc362f;}
 .index_container .item .countdown {position: absolute;bottom: 0px;z-index: 200;height:28px;line-height:24px;padding: 0 7px;background:rgba(0,0,0,0.5);color:#fff;font-size:14px;text-align: center;width:100%;padding:2px}
 .index_container .item .info_ads {position: absolute;background: rgba(0,0,0,0.3);top: 0;right: 0;z-index: 100;width:100%;height: 100%;text-align: center;vertical-align:middle}
 .index_container .item .info_ads p{color:#fff;margin-top:10%;}
@@ -144,6 +149,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con{border-bottom:1px solid #eee;padding:0 15px;}
 .card .card_state{padding:0 15px;}
 .card .card_state p{line-height:48px;margin:0;color:#e66140;font-size:17px}
+.card .card_state p span{line-height:48px;margin:0;color:#e66140;font-size:12px;background:#fcebe6;padding:2px 5px;margin:5px}
 .card .card_con p{font-size:15px;color:#666;/* padding:14px 0; */margin:0;line-height:44px}
 .card .card_con p.refund_reason_list{border-bottom:1px solid #eee;}
 .card .card_con p.refund_reason_list .refund_reason{color:#333}
@@ -237,8 +243,13 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .slide .countdown p{margin:2px 0;color:#fff;}
 .item_index .item_details{padding:10px;}
 .item_index .item_details .item_title .item_name{float:left;width:80%;border-right:1px solid #eee;}
+.item_index .item_details .item_title .item_other{float:left;width:70%;border-right:1px solid #eee;}
 .item_index .item_details .item_title .item_name p{padding-right:10px;margin:0;color:#000;font-size:15px;}
 .item_index .item_details .item_title .item_position{float:left;width:20%;text-align:center}
+#Gift .modal-header {background: #e66140;}
+#Gift .modal-body {text-align: left;color: #e66140}
+#Gift .modal-footer {background: #fff}
+#Gift .btn-default {color: #fff;background-color: #e66140;border-color: #ccc;}
 .item_index .item_details .item_title .item_position p{line-height:4px}
 .item_index .item_details p span.tag_blue{color: #4697e6;padding: 2px 4px;background: #cfe6fc;margin: 0 5px;border-radius: 2px;}
 .item_index .voucherlist{position:relative;display: block; }
@@ -261,7 +272,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_type{color:#e66140;font-size:1em;height:20px;line-height:20px;overflow:hidden;}
 .item_index .voucherlist .voucher .voucher_info .voucher_instructions .voucher_limit{width:100%;background:#e66140;color:#fff;font-size:0.8em;height:18px;line-height:18px;overflow:hidden;}
 .item_index .voucherlist .voucher .voucher_submit{width:30%;float:left;text-align: center;color: #fff;padding:15px 0}
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
 	.item_index .voucherlist .voucher .voucher_submit{width:30%;float:left;text-align: center;color: #fff;padding:13px 0}
 }
 @media screen and (max-width: 350px) {
@@ -305,6 +316,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .houseype_img img{width:100%;}
 .card .houseype_text{padding:15px}
 .card .houseype_text p{font-size:14px;color:#666;}
+.card .houseype_text p.add_border{padding:5px;border:1px solid #ddd;border-radius:5px}
 .card .houseype_text p .houseype_details{float:right}
 .houseype_img .modal-dialog {margin: 40% 0;}
 .card .houseype_img {position: relative;display: block;margin-bottom: 5px;}
@@ -320,8 +332,8 @@ height: 24px;line-height: 24px;padding: 0 7px;background: rgba(0,0,0,0.5);color:
 
 /* scan_input */
 .scan_input{width:240px;height:45px;background:#fff;margin:100px auto;
-border:12px solid #000;border-image-source:url(../images/border.png);  border-image-slice:27 27 27 27;}
-.scan_input input{height:15px;outline:none;border:none;margin-top:-2px}
+border:10px solid #000;border-image-source:url(../images/border.png);  border-image-slice:27 27 27 27;}
+.scan_input input{height:30px;outline:none;border:none;margin-top:-2px}
 .scan_btn{width:260px;margin:auto;}
 .scan_btn button{width:110px;height:36px;color:#fff;border-radius:3px;outline:none;margin:10px;}
 .scan_btn_switch{border:1px solid #fff;background:none;}
@@ -331,8 +343,12 @@ border:12px solid #000;border-image-source:url(../images/border.png);  border-im
 /* scan_input */
 
 /*.carousel-inner>.active {max-height:300px;}*/
-/* 二维码加logo */
+
 .qrcodeCanvas .codepic{width:150px;height:150px}
 .qrcodeCanvas{position:relative}
 .qrcodeCanvas .logopic{position:absolute;top:60px;left:60px}
 .qrcodeCanvas .logopic img{width:40px}
+
+
+
+
