@@ -76,7 +76,7 @@ a:hover{text-decoration:none}
 
 .dianjiqiangpai{position:fixed;bottom:0;width:100%; z-index:16;}
 .dianjiqiangpai .qiangbai_price{width:30%;background:#fff;color:#e66140;float:left;line-height:50px;text-align:center}
-.dianjiqiangpai .qiangbai_btn{width:70%;background:#e66140;color:#fff;float:left;line-height:50px;text-align:center}
+.dianjiqiangpai .qiangbai_btn{width:70%;background:#e66140;color:#fff;float:left;line-height:47px;text-align:center}
 .dianjiqiangpai .qiangbai_btn a{color:#fff}
 .dianjiqiangpai .qiangbai_btn a span.fs24{font-weight:bold;font-size:24px}
 
@@ -303,7 +303,9 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 #xuzhi .xuzhi_con .xuzhi_title p{    background: #fff;width: 100px;
     margin: 0 auto;margin-bottom:15px;
     margin-top: -32px;}
-#xuzhi .xuzhi_con .xuzhi_details p{ font-size:15px;color:#000}
+#xuzhi .xuzhi_con .xuzhi_details p{ font-size:15px;color:#000;text-align:justify}
+#xuzhi .xuzhi_con .xuzhi_details p span{ font-size:14px;}
+#xuzhi .xuzhi_con .xuzhi_details p span.red{ color:red}
 /* item */
 
 
@@ -343,6 +345,10 @@ border:10px solid #000;border-image-source:url(../images/border.png);  border-im
 /* scan_input */
 
 /*.carousel-inner>.active {max-height:300px;}*/
+
+
+
+
 
 .qrcodeCanvas .codepic{width:150px;height:150px}
 .qrcodeCanvas{position:relative}

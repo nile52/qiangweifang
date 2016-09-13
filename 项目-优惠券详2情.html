@@ -133,27 +133,18 @@
 	<!-- 倒计时开始 -->	
 	<div class="card">	
 		<div class="houseype_img">  
-			<div id="myCarousel_1" class="carousel slide">
-			   <!-- 轮播（Carousel）指标 -->
-			   <ol class="carousel-indicators">
-				  <li data-target="#myCarousel_1" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel_1" data-slide-to="1"></li>
-				  <li data-target="#myCarousel_1" data-slide-to="2"></li>
-			   </ol>   
-			   <!-- 轮播（Carousel）项目 -->
-			   <div class="carousel-inner">
-				  <div class="item active">
-					 <img src="images/slide1.jpg" alt="First slide">
-				  </div>
-				  <div class="item">
-					 <img src="images/slide2.jpg" alt="Second slide">
-				  </div>
-				  <div class="item">
-					 <img src="images/slide3.jpg" alt="Third slide">
-				  </div>
-			   </div>
-			</div> 
-				
+			<div class="swipe">
+			  <div class='swipe-wrap'>
+				<div><img src="images/slide1.jpg" alt=""></div>
+				<div><img src="images/slide1.jpg" alt=""></div>
+				<div><img src="images/slide1.jpg" alt=""></div>
+			  </div>
+			</div>	
+			<style>
+			.swipe {overflow: hidden;visibility: hidden;position: relative;}		
+			.swipe-wrap {overflow: hidden;position: relative;}
+			.swipe-wrap > div {float: left;width: 100%;position: relative;}		
+			</style>				
 		</div>
 		<div class="houseype_text">
 			<p><span class="c_red fs17">A1户型</span> <span class="houseype_details">3室1厅1卫，89㎡，约150万</span></p>
@@ -163,26 +154,13 @@
 	</div>		
 	<div class="card">	
 		<div class="houseype_img">					  
-			<div id="myCarousel_2" class="carousel slide">
-			   <!-- 轮播（Carousel）指标 -->
-			   <ol class="carousel-indicators">
-				  <li data-target="#myCarousel_2" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel_2" data-slide-to="1"></li>
-				  <li data-target="#myCarousel_2" data-slide-to="2"></li>
-			   </ol>   
-			   <!-- 轮播（Carousel）项目 -->
-			   <div class="carousel-inner">
-				  <div class="item active">
-					 <img src="images/slide1.jpg" alt="First slide">
-				  </div>
-				  <div class="item">
-					 <img src="images/slide2.jpg" alt="Second slide">
-				  </div>
-				  <div class="item">
-					 <img src="images/slide3.jpg" alt="Third slide">
-				  </div>
-			   </div>
-			</div> 
+			<div class="swipe">
+			  <div class='swipe-wrap'>
+				<div><img src="images/slide1.jpg" alt=""></div>
+				<div><img src="images/slide1.jpg" alt=""></div>
+				<div><img src="images/slide1.jpg" alt=""></div>
+			  </div>		  
+			</div>		
 							
 		</div>
 		<div class="houseype_text">
@@ -198,7 +176,7 @@
 		<div class="qiangbai_price fs14"><img src="images/phone.png" width="20"> 客服</div>
 	</div>		
 <!-- 加入图片拖拽 -->
-<script src="js/hammer.js"></script>				
+<!-- <script src="js/hammer.js"></script>				
 <script>
 $(document).ready(function() {  
 		$('.carousel').hammer().on('swipeleft', function(){
@@ -208,7 +186,15 @@ $(document).ready(function() {
 			$(this).carousel('prev'); 
 		})
  }); 
-</script>			
-<!-- 加入图片拖拽 -->				
+</script>	 -->		
+<!-- 加入图片拖拽 -->	
+
+<script src='js/swipe.js'></script>
+<script>
+// with jQuery
+window.mySwipe = $('.swipe').Swipe().data('Swipe');
+</script>	
+
+		
 </body>
 </html>
