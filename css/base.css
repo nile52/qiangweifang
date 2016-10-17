@@ -96,7 +96,7 @@ a:hover{text-decoration:none}
     border:0;background:#e66140;
     border-bottom-color: transparent;
 }
-.toolbar{text-align:center;height:45px;line-height:45px;position: fixed;: fixed;z-index: 10000;background: rgb(245,245,245);width: 100%;}
+.toolbar{text-align:center;height:45px;line-height:45px;position: fixed;z-index: 10000;background: rgb(245,245,245);width: 100%;}
 .toolbar .p25{width:33.3%;float:left;}
 .toolbar .p25 .btn {background:rgb(245,245,245);outline:none;padding:0;font-size:15px;color: #666;}
 .toolbar .p25 .btn:active {box-shadow:none;}
@@ -150,8 +150,9 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_state{padding:0 15px;}
 .card .card_state p{line-height:48px;margin:0;color:#e66140;font-size:17px}
 .card .card_state p span{line-height:48px;margin:0;color:#e66140;font-size:12px;background:#fcebe6;padding:2px 5px;margin:5px}
-.card .card_con p{font-size:15px;color:#666;padding:10px 0;margin:0;/* line-height:44px */}
+.card .card_con p{font-size:15px;color:#666;padding:10px 0;margin:0;height:44px;/* line-height:44px */}
 .card .card_con p.refund_reason_list{border-bottom:1px solid #eee;}
+.card .card_con p.refund_reason_list img{margin: 0px 10px 10px 0; float: left;}
 .card .card_con p.refund_reason_list .refund_reason{color:#333}
 .card .card_con p.order_details_item_list{border-bottom:1px solid #eee;}
 #clearbox1 {display:none}
@@ -163,8 +164,8 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
     background-position: center;
     background-size: 20px;
     position: absolute;
-    right: 50px;
-    margin-top: -40px;
+    right: 15px;
+    margin-top: -30px;
     width: 51px;
     height: 35px;
 }
@@ -181,7 +182,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con p.order_details_item_list .order_details_itemcom{color:#000;min-height:21px}
 .card .card_con p.content{text-align:center}
 .card .card_con p.content a{color:#e66140;font-size:16px}
-.card .card_con p.refund_reason_list:first-child{border-bottom:0px solid #eee;}
+/*.card .card_con p.refund_reason_list:first-child{border-bottom:0px solid #eee;}*/
 .refund .card_con p.refund_reason_list:first-child{border-bottom:1px solid #eee;}
 .refund .card_con p.refund_reason_list{border-bottom:1px solid #eee;height:44px;margin:0}
 .refund .card_con p.refund_reason_list:last-child{border-bottom:0px solid #eee;}
@@ -197,7 +198,7 @@ input[type="submit"]{box-sizing: content-box;background:#fff;border:none;color:#
 .card .card_con .order_btn{text-align:center;line-height:44px}
 .card .refund_tips{font-size:0.8rem;color:#999}
 /* radio */
-.pay_list_c1{width:20px;height:20px;float:right;padding-top:3px;cursor:pointer;text-align:center;background-image:url(../images/pic_pay_way@2x.png);margin-top: 12px;background-repeat:no-repeat;background-position:-20px 0;}
+.pay_list_c1{width:20px;height:20px;float:right;padding-top:3px;cursor:pointer;text-align:center;background-image:url(../images/pic_pay_way@2x.png);margin-top: 2px;background-repeat:no-repeat;background-position:-20px 0;}
 .radioclass {opacity:0;cursor:pointer;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);}
 .on {background-position:0 0;}
 /* card */
